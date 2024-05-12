@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB RESULTS</title>
+    <link rel="stylesheet" type="css" href="style.css">
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(151,41,247,1) 0%, rgba(24,22,39,1) 90%);
+            animation: moveGradient 10s infinite alternate linear;
+        }
+
+        @keyframes moveGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        table, th, td {
+  border: 1px solid white;
+  align-items: center;
+}
+table{
+    margin-left: 500px;
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+tr:hover {background-color: #D6EEEE;}
+
+.main{
+    margin-top: 40px;
+    margin-left: 600px;
+    color: white;
+    font-size: 72px;
+}
+.sub{
+    margin-top: -40px;
+    margin-left: 530px;
+    color: white;
+    font-size: 42px;
+}
+p{
+    margin-left: 460px;
+    color: white;
+    font-size: 28px;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  margin-left: 650px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  border-color: #fcb69f;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+.btn-5 {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+/* Firecracker animation */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+.sign1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 15%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ff6cff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+.sign2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 30%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ff6cff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+p{
+    margin-top: 40vh;
+    margin-left: 35vw;
+    font-size: 38px;
+}
+table {
+            background: linear-gradient(to bottom, #ff7eb9, #ffaea7);
+            border-collapse: collapse;
+            width: 50%; /* Adjust width as needed */
+            margin: 0 auto; /* Center the table */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+            color: white; /* Text color */
+            font-size: 16px; /* Font size */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        th {
+            font-weight: bold; /* Make table headers bold */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="background">
+            <div class="sign1">
+        <span class="fast-flicker">N</span>SS<span class="flicker">I</span>ITB
+      </div>
+    <div class="sign2">
+        <span class="fast-flicker">W</span>eb<span class="flicker">T</span>eam
+      </div>
+  
+    <p id="see">Click here to see the results</p>
+    <p id="result">Welcome to the NSS family</p>
+    <button id="toggleButton" class="btn btn-5">Show Table</button>
+    <div class="container" id="tableContainer" style="display:none;">
+        
+        <table>
+            <thead>
+              <tr>
+                <th>SL.NO</th>
+                <th>NAME</th>
+                <th>ROLL NO</th>
+                <th>DEPT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mradul Sonkar</td>
+                <td>23B0980</td>
+                <td>CSE</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Pragyan Paramita Behera </td>
+                <td>23B1278</td>
+                <td>ELEC-BTECH</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Quraishi Abdur Rahman</td>
+                <td>23b2471</td>
+                <td>MEMS</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Kaushal Pandey </td>
+                <td>23B0754</td>
+                <TD>CIVIL</TD>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div id="snowContainer"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
